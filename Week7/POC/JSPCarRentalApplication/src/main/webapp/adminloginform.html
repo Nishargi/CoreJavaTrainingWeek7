@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .navhome,.navlogo{
+    margin:10px;
+  }
+  .ulhome
+  {
+  	margin-left:150px;
+  	padding:10px;
+  }
+  .adminnavright
+  {
+   margin-left:1000px;
+  }
+  .section1{
+   margin-top:80px;
+   margin-left:50px;
+   height:400px;
+   width:700px;
+  }
+  .cols
+  {
+  margin:50px;
+  margin-left:100px;
+  height:500px;
+  }
+  div.logo
+ {
+ 	display: flex;
+	justify-content: center;
+ }
+ .adminlogo
+  {
+  height:200px;
+  width:200px;
+  margin-top:30%;
+  padding:5px;
+  border:2px solid black;
+  }
+  </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark navhome">
+  
+  <a class="navbar-brand navlogo" href="#">
+    <img src="images/car.png" alt="logo" style="width:40px;">
+  </a>
+  
+  <ul class="navbar-nav ulhome">
+    <li class="nav-item">
+      <a class="nav-link" href="admin.html"> AdminHome </a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right adminnavright">
+      <li class="nav-item"><a class="nav-link" href="admin.html"><span class="glyphicon glyphicon-log-in"></span> Admin </a></li>   
+  </ul>
+</nav>
+<div class="container-fluid">
+  <div class="row cols">
+    <div class="col-sm-4 logo">
+    	<img src = "images/AdminLogin.png" class="adminlogo" alt="error">
+    </div>
+    <div class="col-sm-8">
+     <div class="container section1">
+		  <h3><b class="text-dark">Admin Login</b></h3>
+		  <hr>
+		  <form action="CheckAdminLogin.jsp" method="post" style="width:300px">
+		  <div class="form-group">
+		    <label for="email1">Email address</label>
+		    <input type="email" class="form-control" name="email" id="email1" placeholder="Email"/>
+		  </div>
+		  <div class="form-group">
+		    <label for="password1">Password</label>
+		    <input type="password" class="form-control" name="password" id="password1" placeholder="Password"/>
+		  </div>  
+		  <button type="submit" class="btn btn-danger"> Login </button>
+		</form>
+	</div>
+   </div>
+  </div>
+</div>
+
+</body>
+</html>

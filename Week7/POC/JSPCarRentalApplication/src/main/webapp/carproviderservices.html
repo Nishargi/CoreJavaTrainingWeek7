@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CarProvider Section</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+  .navhome,.navlogo{
+    margin:10px;
+  }
+  .ulhome
+  {
+  	margin-left:150px;
+  	padding:10px;
+  }
+ .section1{
+  margin:10px;
+  padding-top:100px;
+  font-weight:bolder;
+  text-align:center;
+  height:300px;
+  font-size:40px;
+  }
+  .adminnavright
+  {
+   margin-left:1000px;
+  }
+  .section2{
+  margin-left:300px;
+ }
+  .para
+ {
+ 	font-size:25px;
+ 	text-align:center;
+ }
+ .l1{
+  margin-left:40px;
+  padding:30px;
+ }
+  </style>
+  </head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark navhome">
+  
+  <a class="navbar-brand navlogo" href="#">
+    <img src="images/car.png" alt="logo" style="width:40px;">
+  </a>
+  
+  <ul class="navbar-nav ulhome">
+    <li class="nav-item">
+      <a class="nav-link" href="carproviderservices.html">CarProviderHome </a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right adminnavright">
+      <li class="nav-item"><a class="nav-link" href="CarProviderLogout.jsp"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>   
+  </ul>
+</nav>
+<div class="mb-2 bg-dark text-danger section1"> Welcome , <b class="text-white"> CarProvider </b></div> 
+<br>
+<div class="container text-danger">
+ <p class="para"><b class="text-dark">Our Services</b></p>
+<hr>
+</div>
+<div class="container section2">
+ <a href="AddCarForm.jsp" class="btn btn-outline-danger l1" role="button"> Add Car </a>
+ <a href="ViewCar.jsp" class="btn btn-outline-danger l1" role="button"> View Car </a>
+ <a href="IssueCarForm.jsp" class="btn btn-outline-danger l1" role="button"> Issue Car </a>
+ <a href="ViewIssuedCar.jsp" class="btn btn-outline-danger l1" role="button"> View Issued Car </a>
+ <a href="ReturnCarForm.jsp" class="btn btn-outline-danger l1" role="button"> Return Car </a>
+</div>
+</body>
+</html>

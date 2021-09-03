@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Issue Car </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .section1{
+   margin-top:30px;
+   margin-left:450px;
+   height:800px;
+   width:700px;
+  }
+  </style>
+  </head>
+  <body>
+<div class="container section1">
+<h3><b class="text-dark">Issue Car Form</b></h3>
+<hr>
+  <form action="IssueCar.jsp" method="post" style="width:300px">
+  <div class="form-group">
+    <label for="callno1">Car Id</label>
+    <input type="text" class="form-control" name="carid" id="callno1" placeholder="Car Id"/>
+  </div>
+  <div class="form-group">
+    <label for="id1">Customer Id</label>
+    <input type="text" class="form-control" name="customerid" id="id1" placeholder="Customer Id"/>
+  </div>
+  <div class="form-group">
+    <label for="name1">Customer Name</label>
+    <input type="text" class="form-control" name="customername" id="name1" placeholder="Customer Name"/>
+  </div>
+  <div class="form-group">
+    <label for="name1">License Number</label>
+    <input type="text" class="form-control" name="licensenumber" id="name1" placeholder="License Number"/>
+  </div>
+  <div class="form-group">
+    <label for="mobile1">Customer Mobile</label>
+    <input type="number" class="form-control" name="customermobile" id="mobile1" placeholder="Customer Mobile"/>
+  </div>
+  <button type="submit" class="btn btn-danger">Issue Car</button>
+</form>
+</div>
+</body>
+</html>
